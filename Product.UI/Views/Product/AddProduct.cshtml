@@ -1,0 +1,24 @@
+﻿@using Product.Entity.Dtos.ProductDtos;
+@model ProductAddDto
+@{
+    ViewData["Title"] = "AddProduct";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<form method="post">
+    <label for="Name">Ürün Adı</label>
+    <input type="text" id="Name" name="Name" class="form-control" />
+    <br />
+
+    <label for="Price">Ürün Fiyatı</label>
+    <input type="text" id="Price" name="Price" class="form-control" />
+    <br />
+
+    <label for="Code">Ürün Kodu</label>
+    <input type="text" id="Code" name="Code" class="form-control" />
+    <br />
+
+    <button class="btn btn-primary">Ürünü ekle</button>
+</form>
+
+

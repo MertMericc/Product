@@ -1,0 +1,30 @@
+﻿@using Product.Entity.Dtos.ProductDtos;
+@model ProductUpdateDto
+@{
+    ViewData["Title"] = "UpdateProduct";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<form method="post">
+    <label for="ProductId">Ürün ID</label>
+    <input type="text" id="ProductId" name="ProductId" class="form-control" />
+    <br />
+
+    <label for="Name">Ürün Adı</label>
+    <input type="text" id="Name" name="Name" class="form-control" />
+    <br />
+
+    <label for="Price">Ürün Fiyatı</label>
+    <input type="number" step="0.01" id="Price" name="Price" class="form-control" />
+
+
+    <label for="Code">Ürün Kodu</label>
+    <input type="text" id="Code" name="Code" class="form-control" />
+    <br />
+
+    <button class="btn btn-primary">Ürünü Güncelle</button>
+</form>
+
+
+
+
